@@ -1,0 +1,6 @@
+pull_request_rules:
+  - name: xss_test
+    unknown_field_<img src=x onerror=alert(document.domain)>: yes
+    conditions: []
+    actions:
+      merge: {}
